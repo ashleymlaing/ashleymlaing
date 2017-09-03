@@ -165,6 +165,10 @@ nav .fa{
   width: 15%;
 
 }
+.peopleInput{
+  padding-bottom: 10%;
+  overflow-y: scroll;
+}
 .peopleInput div{
   margin-bottom: 3%;
 }
