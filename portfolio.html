@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app='portfolio'>
+<head>
+  <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/caa8e53472.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashley's Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans+Condensed:300|Oswald|Raleway" rel="stylesheet">
+</head>
+<body ng-controller="featuredCtrl" ng-cloak>
+  <section>
+    <header>
+      <h1 class="col-sm-8 animated infnite slideInLeft homePageText"><a href="index.html">Ashley M Laing</a></h1>
+      <nav class="col-sm-4">
+        <a href="https://github.com/ashleymlaing" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/StrWomanTecGeek" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/alaing1989" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/ashley-laing/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:ashleym.laing@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="tel:+1-617-446-3798"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+    <div  ng-repeat="article in articles" class="col-sm-12 projects">
+      <div class="row">
+        <img src={{article.photo}} alt="">
+        <div class="">
+          <h2>{{article.projectTitle}}</h2>
+          <h3>{{article.skills}}</h3>
+          <p>{{article.description}}</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="skills.html">My Skills</a>
+      <a href="resume.html">My Resume</a>
+      <a href="references.html">References</a>
+      <a href="contact.html">Contact Me</a>
+    </footer>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js">
+  </script>
+  <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/parallax.js" charset="utf-8"></script>
+  <script src="js/parallax.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
