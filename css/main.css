@@ -237,10 +237,22 @@ nav .fa{
 .resumeSection img{
   width: 100%;
 }
-.skillsBox{
-  padding-top: 8%;
 
+header + .skillsBox{
+  padding-top: 8%;
 }
+
+.skillsBox{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.skillsBox.lastOne{
+  padding-bottom: 8%;
+}
+
 .skillsBox h2{
   text-align: center;
   width: 100%;
